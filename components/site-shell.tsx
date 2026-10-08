@@ -57,6 +57,7 @@ export function SiteFooter() {
         </p>
         <nav aria-label="Legal navigation">
           <Link href="/about#investors-partners">Investors &amp; partners</Link>
+          <a href="https://www.linkedin.com/company/vayucred/" rel="noreferrer" target="_blank">LinkedIn</a>
           <a href="mailto:info@vayucred.com">info@vayucred.com</a>
           <Link href="/privacy">Privacy</Link>
           <Link href="/terms">Terms</Link>

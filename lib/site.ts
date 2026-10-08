@@ -8,7 +8,9 @@ export const defaultDescription =
   "Vayucred supports Solar, Biogas/CBG and Biochar projects through assessment, aggregation, monitoring, and buyer introductions or credit sales.";
 
 const socialImage = {
-  url: `${basePath}/social/vayucred-social.png`,
+  // Metadata URLs are resolved against metadataBase, whose staging value already
+  // includes the repository base path. Adding basePath here would duplicate it.
+  url: "/social/vayucred-social.png",
   width: 1200,
   height: 630,
   alt: "Vayucred — From real projects to carbon markets",

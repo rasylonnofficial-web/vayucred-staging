@@ -20,7 +20,7 @@ const routes = [
   ["/terms", "app/terms/page.tsx"],
 ];
 
-const [layout, homepage, site, sitemap, robots, llms, manifest, styles, privacy, terms] = await Promise.all([
+const [layout, homepage, site, sitemap, robots, llms, manifest, styles, privacy, terms, htaccess] = await Promise.all([
   read("app/layout.tsx"),
   read("app/page.tsx"),
   read("lib/site.ts"),
@@ -31,6 +31,7 @@ const [layout, homepage, site, sitemap, robots, llms, manifest, styles, privacy,
   read("app/globals.css"),
   read("app/privacy/page.tsx"),
   read("app/terms/page.tsx"),
+  read("public/.htaccess"),
 ]);
 
 requireCondition(layout.includes("metadataBase: new URL(siteUrl)"), "Metadata base is missing.");
@@ -40,6 +41,7 @@ requireCondition(site.includes('legalName: "RASYLONN TECHNOLOGIES PRIVATE LIMITE
 requireCondition(site.includes('"@type": "Organization"'), "Organization schema is missing.");
 requireCondition(site.includes('"@type": "WebSite"'), "WebSite schema is missing.");
 requireCondition(site.includes("sameAs"), "Organization identity links are missing.");
+requireCondition(site.includes('url: "/social/vayucred-social.png"'), "Social image URL is not safe for repository-scoped staging metadata.");
 requireCondition(homepage.includes('type="application/ld+json"'), "Homepage JSON-LD output is missing.");
 requireCondition(robots.includes('disallow: "/"'), "Staging crawl block is missing.");
 requireCondition(robots.includes('allow: "/"'), "Production crawl permission is missing.");
@@ -48,6 +50,10 @@ requireCondition(llms.includes("## Confirmed scope"), "llms.txt is missing its c
 requireCondition(manifest.includes('theme_color: "#F7F1E4"'), "Manifest theme colour does not match the brand canvas.");
 requireCondition(manifest.includes("basePath"), "Manifest is not safe for repository-scoped staging paths.");
 requireCondition(styles.includes("Search-friendly responsive guardrails"), "Responsive readability guardrails are missing.");
+requireCondition(styles.includes("overflow-wrap: anywhere"), "Narrow-viewport overflow protection is missing.");
+requireCondition(layout.includes("NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION") && layout.includes("NEXT_PUBLIC_BING_SITE_VERIFICATION"), "Search-engine ownership verification hooks are missing.");
+requireCondition(htaccess.includes("^www\\.vayucred\\.com$") && htaccess.includes("https://vayucred.com"), "Canonical www redirect is missing from Hostinger configuration.");
+requireCondition(htaccess.includes("Content-Security-Policy") && htaccess.includes("X-Content-Type-Options") && htaccess.includes("Referrer-Policy"), "Production security headers are incomplete.");
 
 for (const [route, file] of routes) {
   requireCondition(sitemap.includes(`"${route}"`), `Sitemap source is missing ${route}.`);

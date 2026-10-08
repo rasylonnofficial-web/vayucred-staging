@@ -17,6 +17,8 @@ const fraunces = localFont({
 });
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const bingSiteVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -32,6 +34,10 @@ export const metadata: Metadata = {
   ],
   manifest: `${basePath}/manifest.webmanifest`,
   icons: { icon: `${basePath}/icon.svg` },
+  verification: {
+    ...(googleSiteVerification ? { google: googleSiteVerification } : {}),
+    ...(bingSiteVerification ? { other: { "msvalidate.01": bingSiteVerification } } : {}),
+  },
   ...createPageMetadata({
     title: "Vayucred — From real projects to carbon markets",
     description: defaultDescription,

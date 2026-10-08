@@ -24,7 +24,7 @@ npm run build
 npm run build:hostinger
 ```
 
-The project retains its Vinext/Vite preview scaffold. `npm run build:hostinger` creates the static `out/` directory for Hostinger Business Web Hosting. Staging builds must omit `NEXT_PUBLIC_ALLOW_INDEXING=true`; the production build must set it explicitly after launch approval.
+The project retains its Vinext/Vite preview scaffold. `npm run build:hostinger` creates the static `out/` directory for Hostinger Business Web Hosting and copies the Apache redirect/security configuration into it. Staging builds must omit `NEXT_PUBLIC_ALLOW_INDEXING=true`; the production build must set it explicitly after launch approval. Copy `.env.production.example` to `.env.production.local` only for an approved production build and add search-engine verification tokens when available.
 
 ## GitHub Pages staging
 
@@ -40,6 +40,7 @@ The workflow in `.github/workflows/deploy-pages.yml` builds and deploys the `mai
 - public/fonts/: self-hosted Fraunces and DM Sans with licence text.
 - build/: required framework source files; do not delete this directory as build output.
 - scripts/: development, build and content checks.
+- docs/launch-operations.md: launch, enquiry handling, measurement and rollback runbook.
 
 Canonical palette: ../tokens/brand-tokens.json. The website carries its own generated CSS and font files for deployment.
 
@@ -49,4 +50,4 @@ The existing package lock is preserved. Unused starter UI widgets have been remo
 
 Nine routes: /, /asset-owners, /buyers, /evidence-infrastructure, /methodology, /about, /contact, /privacy, /terms. Contact is email-only through info@vayucred.com, with an additional investor/partner subject link. The homepage keeps project owners and buyers primary and adds an investor/partner section linked to About and Contact. All routes have production canonicals and launch-ready metadata. Indexing is disabled by default for local and staging builds and enabled only with `NEXT_PUBLIC_ALLOW_INDEXING=true`. The project includes Open Graph/Twitter metadata, Organization/WebSite structured data, an environment-aware sitemap and robots route, `llms.txt`, a manifest and temporary brand-safe browser/social artwork.
 
-Read ../../Brand-Book/website-plan.md for remaining content facts and launch decisions. Focus areas, service scope, audience priority, founders, legal entity, registered office and public email are confirmed. SCADA and digital MRV are explicitly in development. Privacy and Terms now reflect the email-only, Hostinger-hosted launch setup and retain a counsel-review recommendation. No analytics, newsletter or active intake form is enabled.
+Read ../../Brand-Book/website-plan.md for remaining content facts and launch decisions. Focus areas, service scope, audience priority, founders, legal entity, registered office and public email are confirmed. SCADA and digital MRV are explicitly in development. Privacy and Terms now reflect the email-only, Hostinger-hosted launch setup and retain a counsel-review recommendation. No analytics, newsletter or active intake form is enabled. The launch runbook deliberately recommends a cookie-free initial launch until an analytics owner, measurement ID and consent approach are approved.

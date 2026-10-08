@@ -182,6 +182,7 @@ a { color: inherit; text-decoration: none; }
 .footer-inner p { text-align: center; }
 .footer-inner > span { text-align: right; }
 .footer-inner nav { display: flex; justify-content: flex-end; gap: 20px; color: var(--ink-soft); font-size: 0.84rem; }
+.footer-inner nav a { display: inline-flex; min-height: 44px; align-items: center; }
 .footer-inner nav a:hover { color: var(--primary); }
 
 .mobile-menu { display: none; position: relative; justify-self: end; }
@@ -209,6 +210,9 @@ a { color: inherit; text-decoration: none; }
 }
 .mobile-menu nav a { padding: 14px 18px; border-bottom: 1px solid var(--line); color: var(--ink-soft); }
 .mobile-menu nav a:last-child { border-bottom: 0; color: var(--primary); }
+
+[data-slot="button"],
+.wordmark { min-height: 44px; }
 
 .inner-hero {
   position: relative;
@@ -1165,7 +1169,7 @@ body { font-size: 17px; }
 .contact-path-grid svg { width: 34px; height: 34px; color: var(--pine-900); stroke-width: 1.4; }
 .contact-path-grid h3 { margin: auto 0 14px; color: var(--pine-950); font-family: var(--font-display); font-size: clamp(2.3rem, 3.4vw, 3.7rem); font-weight: 500; line-height: 1; }
 .contact-path-grid p { margin: 0 0 26px; color: var(--ink); }
-.contact-path-grid a { display: inline-flex; align-items: center; gap: 7px; width: fit-content; border-bottom: 1px solid var(--pine-900); color: var(--pine-950); font-weight: 600; }
+.contact-path-grid a { display: inline-flex; min-height: 44px; align-items: center; gap: 7px; width: fit-content; border-bottom: 1px solid var(--pine-900); color: var(--pine-950); font-weight: 600; }
 .contact-path-grid a svg { width: 16px; height: 16px; }
 .contact-preparation-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(60px, 10vw, 140px); align-items: start; }
 .contact-preparation-layout h2 { margin-top: 22px; }
@@ -1179,9 +1183,10 @@ body { font-size: 17px; }
 .public-contact-layout { display: grid; grid-template-columns: 120px 1fr auto; gap: clamp(30px, 6vw, 76px); align-items: center; }
 .contact-mail-icon { display: grid; width: 112px; height: 112px; place-items: center; border: 1px solid rgb(16 47 39 / 24%); border-radius: 50%; background: var(--cream); }
 .contact-mail-icon svg { width: 38px; color: var(--pine-900); stroke-width: 1.4; }
-.public-contact h2 { margin: 12px 0 10px; font-size: clamp(2.6rem, 4.8vw, 4.8rem); }
+.public-contact-layout > * { min-width: 0; }
+.public-contact h2 { max-width: 100%; margin: 12px 0 10px; font-size: clamp(2rem, 8.8vw, 4.8rem); overflow-wrap: anywhere; }
 .public-contact p { margin: 0; color: var(--ink-soft); }
-.public-contact-layout > a { display: inline-flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--pine-900); color: var(--pine-950); font-weight: 700; }
+.public-contact-layout > a { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; border-bottom: 1px solid var(--pine-900); color: var(--pine-950); font-weight: 700; }
 .public-contact-layout > a svg { width: 17px; }
 .contact-boundary { padding-block: 80px; }
 .contact-boundary .boundary-note { margin-top: 0; }
@@ -1333,7 +1338,7 @@ body { font-size: 17px; }
 .team-monogram { display: grid; width: 112px; height: 128px; place-items: center; background: var(--pine-900); color: var(--cream); font-family: var(--font-display); font-size: 2rem; }
 .about-team-grid p { margin: 0 0 8px; color: var(--forest); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .about-team-grid h3 { margin: 0 0 22px; color: var(--pine-950); font-family: var(--font-display); font-size: clamp(1.85rem, 3vw, 2.65rem); font-weight: 500; line-height: 1.05; }
-.about-team-grid a { display: inline-flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--line-strong); color: var(--pine-950); font-weight: 700; }
+.about-team-grid a { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; border-bottom: 1px solid var(--line-strong); color: var(--pine-950); font-weight: 700; }
 .about-team-grid a svg { width: 16px; }
 .team-photo-note { margin: 18px 0 0; color: var(--ink-soft); font-size: .82rem; }
 .legal-copy section > div > p + p { margin-top: 16px; }
