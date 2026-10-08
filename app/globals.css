@@ -819,6 +819,17 @@ body { font-size: 17px; }
 .contact-inline { display: inline-flex; align-items: center; gap: 8px; margin-top: 26px; border-bottom: 1px solid var(--pine-900); color: var(--pine-950); font-weight: 700; }
 .contact-inline svg { width: 17px; }
 
+.project-family-card a,
+.home-audiences .audience-card a,
+.integrity-copy .text-link,
+.technology-note a,
+.contact-inline,
+.route-status-note a,
+.methodology-boundary > p a,
+.about-technology-layout > a {
+  min-height: 44px;
+}
+
 @media (max-width: 1080px) {
   .home-hero-layout { grid-template-columns: minmax(0, .95fr) minmax(380px, 1.05fr); }
   .home-hero h1 { font-size: clamp(3.7rem, 6.5vw, 5.7rem); }
