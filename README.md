@@ -41,6 +41,7 @@ The workflow in `.github/workflows/deploy-pages.yml` builds and deploys the `mai
 - build/: required framework source files; do not delete this directory as build output.
 - scripts/: development, build and content checks.
 - docs/launch-operations.md: launch, enquiry handling, measurement and rollback runbook.
+- docs/launch-readiness-2026-10-09.md: evidence-based technical verdict and external launch gates.
 - docs/lead-register-template.csv: copy-only template for consistent enquiry ownership and follow-up.
 - docs/campaign-register-template.csv: copy-only template for UTM and outreach attribution.
 - docs/enquiry-response-templates.md: approved starting points for acknowledgement and qualification replies.
