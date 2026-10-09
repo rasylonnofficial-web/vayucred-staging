@@ -15,7 +15,7 @@ The website leads with real Solar, Biogas/CBG and Biochar projects. Technology s
 - SCADA and digital MRV: in development.
 - Primary audiences: project owners and carbon buyers.
 - Additional audiences: investors and partners.
-- Company details: Vayucred, a brand of RASYLONN TECHNOLOGIES PRIVATE LIMITED; Hyderabad, India; `info@vayucred.com`.
+- Company details: Vayucred, a brand of RASYLONN TECHNOLOGIES PRIVATE LIMITED; Hyderabad, India; `hello@vayucred.com`.
 
 Do not publish invented project metrics, earnings estimates, clients, certifications, methodology approvals, prices or technology deployment claims.
 

@@ -71,7 +71,7 @@ export const organizationSchema = {
       name: "Vayucred",
       legalName: "RASYLONN TECHNOLOGIES PRIVATE LIMITED",
       url: siteUrl,
-      email: "info@vayucred.com",
+      email: "hello@vayucred.com",
       description: defaultDescription,
       address: {
         "@type": "PostalAddress",
@@ -106,7 +106,7 @@ export const organizationSchema = {
       },
       contactPoint: {
         "@type": "ContactPoint",
-        email: "info@vayucred.com",
+        email: "hello@vayucred.com",
         contactType: "business enquiries",
         areaServed: "IN",
         availableLanguage: ["English"],

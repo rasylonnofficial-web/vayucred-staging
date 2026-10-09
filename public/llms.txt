@@ -8,7 +8,7 @@
 - Current support: assessment, aggregation, monitoring, and buyer introductions or credit sales according to the project and engagement.
 - Primary audiences: project owners and carbon buyers.
 - Additional audiences: investors and partners.
-- Public contact: info@vayucred.com.
+- Public contact: hello@vayucred.com.
 - Founder: Rishwan Reddy. Co-founder: Sai Puneeth Bandi.
 - Official LinkedIn: https://www.linkedin.com/company/vayucred/
 - SCADA and digital MRV capabilities are in development; the website does not represent them as deployed products.

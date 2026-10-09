@@ -36,7 +36,7 @@ export default function ContactPage() {
           <div className="route-section-heading">
             <p className="kicker">Choose your conversation</p>
             <h2 id="contact-paths-title">One public address. A clearer starting point.</h2>
-            <p>Every route currently begins by email at info@vayucred.com. The suggested subject helps direct the conversation.</p>
+            <p>Every route currently begins by email at hello@vayucred.com. The suggested subject helps direct the conversation.</p>
           </div>
           <div className="contact-path-grid">
             {conversations.map(([title, text, subject, Icon], index) => (
@@ -44,7 +44,7 @@ export default function ContactPage() {
                 <div><span>0{index + 1}</span><Icon aria-hidden="true" /></div>
                 <h3>{title}</h3>
                 <p>{text}</p>
-                <a href={`mailto:info@vayucred.com?subject=${encodeURIComponent(subject)}`}>Begin by email <ArrowUpRight aria-hidden="true" /></a>
+                <a href={`mailto:hello@vayucred.com?subject=${encodeURIComponent(subject)}`}>Begin by email <ArrowUpRight aria-hidden="true" /></a>
               </article>
             ))}
           </div>
@@ -67,8 +67,8 @@ export default function ContactPage() {
       <section className="public-contact" aria-labelledby="public-contact-title">
         <div className="shell public-contact-layout">
           <div className="contact-mail-icon"><Mail aria-hidden="true" /></div>
-          <div><p className="kicker">Public contact</p><h2 id="public-contact-title">info@vayucred.com</h2><p>Vayucred is a brand of RASYLONN TECHNOLOGIES PRIVATE LIMITED, based in Hyderabad, India.</p></div>
-          <a href="mailto:info@vayucred.com?subject=Vayucred%20conversation">Write to Vayucred <ArrowUpRight aria-hidden="true" /></a>
+          <div><p className="kicker">Public contact</p><h2 id="public-contact-title">hello@vayucred.com</h2><p>Vayucred is a brand of RASYLONN TECHNOLOGIES PRIVATE LIMITED, based in Hyderabad, India.</p></div>
+          <a href="mailto:hello@vayucred.com?subject=Vayucred%20conversation">Write to Vayucred <ArrowUpRight aria-hidden="true" /></a>
         </div>
       </section>
 

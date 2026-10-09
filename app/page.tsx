@@ -288,7 +288,7 @@ export default function Home() {
       <section className="contact-section home-contact" id="contact">
         <div className="shell contact-inner">
           <div><p className="kicker">Begin a conversation</p><h2>Bring the project.<br />Bring the questions.</h2></div>
-          <div><p>Tell us what you are working on, the intended pathway and the records already available. Keep the first message high level and do not attach sensitive project files.</p><a className="contact-inline" href="mailto:info@vayucred.com">info@vayucred.com <ArrowUpRight aria-hidden="true" /></a></div>
+          <div><p>Tell us what you are working on, the intended pathway and the records already available. Keep the first message high level and do not attach sensitive project files.</p><a className="contact-inline" href="mailto:hello@vayucred.com">hello@vayucred.com <ArrowUpRight aria-hidden="true" /></a></div>
         </div>
       </section>
 

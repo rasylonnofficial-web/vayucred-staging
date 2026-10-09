@@ -44,7 +44,7 @@ const source = sourceFiles.map((file) => readFileSync(file, "utf8")).join("\n");
 requireCondition(!source.includes("VayuCred"), "Incorrect brand capitalization `VayuCred` appears in website source.");
 requireCondition(!/\bfintech\b/i.test(source), "Prohibited fintech positioning appears in website source.");
 requireCondition(!source.includes("<form"), "An active form exists before contact ownership and privacy approval.");
-requireCondition(source.includes("info@vayucred.com"), "The approved public contact email is missing.");
+requireCondition(source.includes("hello@vayucred.com"), "The approved public contact email is missing.");
 requireCondition(source.includes("RASYLONN TECHNOLOGIES PRIVATE LIMITED"), "The certificate-confirmed legal entity is missing.");
 requireCondition(!source.includes("Raylonn Technologies Private Limited"), "The earlier incorrect legal spelling remains in website source.");
 requireCondition(source.includes("Rishwan Reddy") && source.includes("Sai Puneeth Bandi"), "The confirmed founding team is missing.");

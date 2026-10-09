@@ -8,12 +8,12 @@ This runbook covers the first public release of `https://vayucred.com`. It keeps
 - `www.vayucred.com` redirects permanently to `https://vayucred.com`.
 - All nine public routes, `robots.txt`, `sitemap.xml`, `llms.txt`, the social image and the browser icon return successfully.
 - Privacy Notice and Website Terms have founder approval. Qualified Indian counsel review remains recommended because the documents are an operational startup baseline, not legal advice.
-- `info@vayucred.com` is monitored and its SPF, DKIM and DMARC records remain valid.
+- `hello@vayucred.com` is monitored and its SPF, DKIM and DMARC records remain valid.
 - A backup of the current production files is available before replacement, and the previous archive is retained for rollback.
 
 ## Enquiry workflow
 
-Use `info@vayucred.com` as the only public intake channel until an approved secure form or CRM is introduced.
+Use `hello@vayucred.com` as the only public intake channel until an approved secure form or CRM is introduced.
 
 1. Acknowledge a new enquiry on the same business day.
 2. Record it in one shared lead register; do not copy confidential attachments into the register.

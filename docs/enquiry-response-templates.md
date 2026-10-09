@@ -15,7 +15,7 @@ For now, please do not email credentials, sensitive personal information, confid
 Regards,
 
 Vayucred  
-info@vayucred.com
+hello@vayucred.com
 
 ## Project-owner qualification
 
@@ -36,7 +36,7 @@ Please do not attach confidential records at this stage. Eligibility, methodolog
 Regards,
 
 Vayucred  
-info@vayucred.com
+hello@vayucred.com
 
 ## Buyer qualification
 
@@ -51,7 +51,7 @@ Vayucred can discuss project context, evidence readiness and potential market co
 Regards,
 
 Vayucred  
-info@vayucred.com
+hello@vayucred.com
 
 ## Investor or partner acknowledgement
 
@@ -66,4 +66,4 @@ Please share the high-level collaboration objective and the organisation or team
 Regards,
 
 Vayucred  
-info@vayucred.com
+hello@vayucred.com
