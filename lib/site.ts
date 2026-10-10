@@ -82,6 +82,9 @@ export const organizationSchema = {
         addressCountry: "IN",
       },
       sameAs: [
+        "https://x.com/vayucred",
+        "https://www.instagram.com/vayucred/",
+        "https://www.threads.com/@vayucred",
         "https://www.linkedin.com/company/vayucred/",
         "https://www.linkedin.com/in/rishwan-reddy/",
         "https://www.linkedin.com/in/saipuneethbandi/",
