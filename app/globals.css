@@ -189,6 +189,7 @@ a { color: inherit; text-decoration: none; }
 .footer-brand address { display: grid; gap: 12px; color: var(--muted-foreground); font-size: .85rem; font-style: normal; }
 .footer-brand address a,
 .footer-brand address span { display: inline-flex; min-width: 0; align-items: center; gap: 10px; overflow-wrap: anywhere; }
+.footer-brand address a { min-height: 44px; }
 .footer-brand address svg { width: 16px; height: 16px; flex: 0 0 auto; color: var(--forest); stroke-width: 1.7; }
 .footer-brand address a:hover { color: var(--primary); }
 .footer-column { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
@@ -201,7 +202,7 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: .08em;
   text-transform: uppercase;
 }
-.footer-column a { color: var(--muted-foreground); font-size: .88rem; transition: color 140ms ease; }
+.footer-column a { display: inline-flex; min-height: 44px; align-items: center; color: var(--muted-foreground); font-size: .88rem; transition: color 140ms ease; }
 .footer-column a:hover { color: var(--primary); }
 .newsletter-card {
   display: grid;
@@ -249,8 +250,8 @@ a { color: inherit; text-decoration: none; }
 .footer-socials { display: flex; gap: 10px; margin: 0 0 26px; }
 .footer-socials a {
   display: grid;
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   place-items: center;
   padding: 0;
   border: 1px solid var(--line-strong);
