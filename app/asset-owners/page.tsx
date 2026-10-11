@@ -61,7 +61,7 @@ export default function AssetOwnersPage() {
           </div>
           <div className="route-focus-grid">
             {focusAreas.map(([title, text, Icon, tone], index) => (
-              <article className={tone} key={title}>
+              <article className={tone} id={tone === "biogas" ? "biogas-cbg" : tone} key={title}>
                 <div><span>0{index + 1}</span><Icon aria-hidden="true" /></div>
                 <h3>{title}</h3>
                 <p>{text}</p>
@@ -71,7 +71,7 @@ export default function AssetOwnersPage() {
         </div>
       </section>
 
-      <section className="section shell owner-pathway" aria-labelledby="owner-pathway-title">
+      <section className="section shell owner-pathway" id="project-pipeline" aria-labelledby="owner-pathway-title">
         <div className="route-section-heading narrow">
           <p className="kicker">Owner pathway</p>
           <h2 id="owner-pathway-title">First understand the activity. Then shape the pathway.</h2>
@@ -118,7 +118,7 @@ export default function AssetOwnersPage() {
       <section className="route-cta">
         <div className="shell route-cta-inner">
           <div><p className="kicker">Start with what exists</p><h2>Bring the project, intended pathway and available records.</h2></div>
-          <Button asChild size="lg"><Link href="/contact">Discuss a project</Link></Button>
+          <Button asChild size="lg"><Link href="/contact#project-enquiry">Discuss a project</Link></Button>
         </div>
       </section>
     </InnerPage>

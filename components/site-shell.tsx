@@ -101,15 +101,15 @@ export function SiteFooter() {
           </section>
 
           <FooterColumn title="Products">
-            <Link href="/evidence-infrastructure">SCADA</Link>
-            <Link href="/evidence-infrastructure">dMRV</Link>
+            <Link href="/evidence-infrastructure#scada">SCADA</Link>
+            <Link href="/evidence-infrastructure#digital-mrv">Digital MRV</Link>
           </FooterColumn>
 
           <FooterColumn title="Carbon Credits">
-            <Link href="/asset-owners">Solar</Link>
-            <Link href="/asset-owners">Biogas / CBG</Link>
-            <Link href="/asset-owners">Biochar</Link>
-            <Link href="/asset-owners">Project Pipelines</Link>
+            <Link href="/asset-owners#solar">Solar</Link>
+            <Link href="/asset-owners#biogas-cbg">Biogas / CBG</Link>
+            <Link href="/asset-owners#biochar">Biochar</Link>
+            <Link href="/asset-owners#project-pipeline">Project Pathway</Link>
           </FooterColumn>
 
           <FooterColumn title="Company">
@@ -126,14 +126,12 @@ export function SiteFooter() {
 
         <section className="newsletter-card" aria-labelledby="newsletter-title">
           <div>
-            <h2 id="newsletter-title">Stay Updated</h2>
-            <p>Get the latest sustainability insights and product updates.</p>
+            <h2 id="newsletter-title">Stay connected</h2>
+            <p>Ask to receive occasional Vayucred company and project updates.</p>
           </div>
-          <div className="newsletter-form" role="group" aria-describedby="newsletter-status">
-            <label className="sr-only" htmlFor="newsletter-email">Email address</label>
-            <input id="newsletter-email" name="email" type="email" autoComplete="email" placeholder="Enter your email" disabled />
-            <button type="button" disabled>Subscribe</button>
-            <span className="sr-only" id="newsletter-status">Newsletter subscriptions will open after the email service and consent process are connected.</span>
+          <div className="newsletter-form">
+            <p>No automated mailing list yet. Send a short email and we will record your interest.</p>
+            <a href="mailto:hello@vayucred.com?subject=Vayucred%20updates">Request updates <Mail aria-hidden="true" /></a>
           </div>
         </section>
 

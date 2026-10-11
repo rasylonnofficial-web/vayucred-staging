@@ -143,7 +143,7 @@ export default function AboutPage() {
       <section className="about-partners" id="investors-partners" aria-labelledby="investors-partners-title">
         <div className="shell about-partners-layout">
           <div><p className="kicker">Investors &amp; partners</p><h2 id="investors-partners-title">Help build stronger connections between projects and credible demand.</h2></div>
-          <div><p>We welcome conversations with investors and partners interested in Vayucred’s company direction, project focus and developing technology.</p><Button asChild size="lg"><Link href="/contact#investors-partners">Start a conversation <ArrowUpRight aria-hidden="true" /></Link></Button></div>
+          <div><p>We welcome conversations with investors and partners interested in Vayucred’s company direction, project focus and developing technology.</p><Button asChild size="lg"><Link href="/contact#investor-enquiry">Start an investor conversation <ArrowUpRight aria-hidden="true" /></Link></Button><Link className="about-partner-link" href="/contact#partner-enquiry">Or discuss a partnership <ArrowUpRight aria-hidden="true" /></Link></div>
         </div>
       </section>
     </InnerPage>

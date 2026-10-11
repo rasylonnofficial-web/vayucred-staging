@@ -85,7 +85,7 @@ export default function BuyersPage() {
       <section className="route-cta buyer-route-cta">
         <div className="shell route-cta-inner">
           <div><p className="kicker">Buyer requirements</p><h2>Define what your internal review needs to see.</h2></div>
-          <Button asChild size="lg"><Link href="/contact">Discuss carbon credits</Link></Button>
+          <Button asChild size="lg"><Link href="/contact#buyer-enquiry">Discuss carbon credits</Link></Button>
         </div>
       </section>
     </InnerPage>

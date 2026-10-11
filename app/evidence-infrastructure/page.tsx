@@ -37,14 +37,14 @@ export default function EvidenceInfrastructurePage() {
             <p>These descriptions communicate direction, not an available software product or committed launch date.</p>
           </div>
           <div className="technology-capability-grid">
-            <article>
+            <article id="scada">
               <div><span className="status-dot" />In development</div>
               <Radar aria-hidden="true" />
               <p>Operational layer</p>
               <h3>SCADA</h3>
               <p>Intended to support the collection and organisation of operational project data.</p>
             </article>
-            <article>
+            <article id="digital-mrv">
               <div><span className="status-dot" />In development</div>
               <ShieldCheck aria-hidden="true" />
               <p>Evidence layer</p>
@@ -89,7 +89,7 @@ export default function EvidenceInfrastructurePage() {
       <section className="route-cta technology-route-cta">
         <div className="shell route-cta-inner">
           <div><p className="kicker">Project monitoring</p><h2>Start with the activity and the records already available.</h2></div>
-          <Button asChild size="lg"><Link href="/contact">Discuss a project <ArrowUpRight aria-hidden="true" /></Link></Button>
+          <Button asChild size="lg"><Link href="/contact#project-enquiry">Discuss a project <ArrowUpRight aria-hidden="true" /></Link></Button>
         </div>
       </section>
     </InnerPage>

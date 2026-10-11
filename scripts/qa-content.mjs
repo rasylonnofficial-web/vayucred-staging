@@ -62,10 +62,22 @@ requireCondition(
 );
 
 const routeSet = new Set(routeFiles.keys());
-const internalLinks = [...source.matchAll(/href=["'](\/[A-Za-z0-9\-\/]*)["']/g)].map((match) => match[1]);
+const internalLinks = [...source.matchAll(/href=["'](\/[A-Za-z0-9\-\/#]*)["']/g)].map((match) => match[1]);
 for (const href of new Set(internalLinks)) {
-  requireCondition(routeSet.has(href), `Internal link has no planned route source: ${href}`);
+  const [path, fragment] = href.split("#");
+  const route = path || "/";
+  requireCondition(routeSet.has(route), `Internal link has no planned route source: ${href}`);
+  if (fragment && routeSet.has(route)) {
+    const targetSource = `${readFileSync(routeFiles.get(route), "utf8")}\n${readFileSync(join(appRoot, "layout.tsx"), "utf8")}`;
+    requireCondition(
+      targetSource.includes(`id="${fragment}"`) ||
+        targetSource.includes(`id={'${fragment}'}`) ||
+        targetSource.includes(`"${fragment}"`),
+      `Internal link points to a missing fragment: ${href}`,
+    );
+  }
 }
+requireCondition(!source.includes("<button type=\"button\" disabled"), "A disabled button is presented as an available public action.");
 
 const globals = readFileSync(join(appRoot, "globals.css"), "utf8");
 requireCondition(globals.includes(":focus-visible"), "Global focus-visible treatment is missing.");

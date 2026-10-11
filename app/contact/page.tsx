@@ -10,10 +10,10 @@ export const metadata = createPageMetadata({
 });
 
 const conversations = [
-  ["Project owner", "Share the project type, general location, operating status and the pathway you are exploring.", "Vayucred project conversation", Sprout],
-  ["Carbon buyer", "Describe the intended use, timing, project preferences and evidence your review process expects.", "Vayucred carbon credit enquiry", BadgeCheck],
-  ["Investor", "Introduce your organisation and the kind of investment conversation you would like to begin.", "Vayucred investor enquiry", Leaf],
-  ["Partner", "Tell us where you work in the ecosystem and the type of collaboration you have in mind.", "Vayucred partnership enquiry", Handshake],
+  ["Project owner", "Share the project type, general location, operating status and the pathway you are exploring.", "Vayucred project conversation", Sprout, "project-enquiry"],
+  ["Carbon buyer", "Describe the intended use, timing, project preferences and evidence your review process expects.", "Vayucred carbon credit enquiry", BadgeCheck, "buyer-enquiry"],
+  ["Investor", "Introduce your organisation and the kind of investment conversation you would like to begin.", "Vayucred investor enquiry", Leaf, "investor-enquiry"],
+  ["Partner", "Tell us where you work in the ecosystem and the type of collaboration you have in mind.", "Vayucred partnership enquiry", Handshake, "partner-enquiry"],
 ] as const;
 
 const preparation = [
@@ -39,8 +39,8 @@ export default function ContactPage() {
             <p>Every route currently begins by email at hello@vayucred.com. The suggested subject helps direct the conversation.</p>
           </div>
           <div className="contact-path-grid">
-            {conversations.map(([title, text, subject, Icon], index) => (
-              <article id={title === "Investor" ? "investors-partners" : undefined} key={title}>
+            {conversations.map(([title, text, subject, Icon, id], index) => (
+              <article id={id} key={title}>
                 <div><span>0{index + 1}</span><Icon aria-hidden="true" /></div>
                 <h3>{title}</h3>
                 <p>{text}</p>
