@@ -71,7 +71,7 @@ const globals = readFileSync(join(appRoot, "globals.css"), "utf8");
 requireCondition(globals.includes(":focus-visible"), "Global focus-visible treatment is missing.");
 requireCondition(globals.includes("prefers-reduced-motion"), "Reduced-motion treatment is missing.");
 
-warnings.push("The approved logo remains deferred. The browser icon and social card are temporary brand-safe launch assets.");
+warnings.push("The approved logo and Fraunces + DM Sans typography are installed. The social card remains a temporary brand-safe launch asset.");
 requireCondition(!globals.includes("fonts.googleapis.com"), "Google Fonts is still referenced after local font approval.");
 const tokens = readFileSync(join(appRoot, "brand-tokens.css"), "utf8");
 requireCondition(tokens.includes("--background: var(--cream)") && tokens.includes("--cream: #F7F1E4"), "The cream canvas is missing.");
