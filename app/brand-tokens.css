@@ -46,5 +46,6 @@
   --destructive: #B3261E;
   --font-display: var(--font-fraunces), Georgia, serif;
   --font-body: var(--font-dm-sans), Arial, sans-serif;
-  --font-data: ui-monospace, Menlo, Consolas, monospace;
+  /* Approved two-family system: operational data and identifiers use DM Sans. */
+  --font-data: var(--font-dm-sans), Arial, sans-serif;
 }

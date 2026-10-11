@@ -1,6 +1,6 @@
 # Vayucred website
 
-This is the working nine-page website for the full rebuild. The brand book is at ../../Brand-Book/index.html; the asset catalogue is at ../index.html. The website uses the complete Air & Canopy palette with Fraunces and DM Sans. Logo work remains deferred.
+This is the working nine-page website for the full rebuild. The brand book is at ../../Brand-Book/index.html; the asset catalogue is at ../index.html. The website uses the complete Air & Canopy palette, the approved connected-system mark, and the final Fraunces + DM Sans typography system.
 
 Read [WORKFLOW.md](WORKFLOW.md) for the design direction, implementation phases, current status and launch gates.
 
@@ -38,6 +38,7 @@ The workflow in `.github/workflows/deploy-pages.yml` builds and deploys the `mai
 - app/globals.css: light website layout and responsive rules.
 - app/brand-tokens.css: generated local copy of ../tokens/brand-tokens.css.
 - public/fonts/: self-hosted Fraunces and DM Sans with licence text.
+- public/brand/: approved source logo and deployment-ready SVG mark.
 - build/: required framework source files; do not delete this directory as build output.
 - scripts/: development, build and content checks.
 - docs/launch-operations.md: launch, enquiry handling, measurement and rollback runbook.
