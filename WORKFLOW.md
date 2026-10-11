@@ -1,6 +1,6 @@
 # Vayucred website workflow
 
-Updated 8 October 2026. This file tracks the new website itself; brand guidance is in `../../Brand-Book/` and reusable source assets remain in `../`.
+Updated 11 October 2026. This file tracks the new website itself; brand guidance is in `../../Brand-Book/` and reusable source assets remain in `../`.
 
 ## Design objective
 
@@ -35,11 +35,11 @@ Do not publish invented project metrics, earnings estimates, clients, certificat
 
 ## Build phases
 
-1. **Foundation — complete.** Dedicated `Website/` project, restored 16-colour palette, local Fraunces and DM Sans files, nine routes, claim checks and a recoverable archive.
+1. **Foundation — complete.** Dedicated `Website/` project, restored 16-colour palette, approved connected-system mark, local Fraunces and DM Sans files, nine routes, claim checks and a recoverable archive.
 2. **Homepage design system — complete for review.** Editorial landscape hero, project-family cards, service journey, owner/buyer pathways, evidence principles, developing-technology note and investor/partner route.
 3. **Whole-site design pass — complete for review.** Carbon projects, For buyers, Technology, Methodology, About and Contact carry the landscape system and page-specific storytelling. Privacy and Terms use a quieter legal-document treatment.
 4. **Content enrichment — partly complete.** Confirmed founder names, roles and LinkedIn links are present. Publishable project examples, supported measurements and approved original founder/project photography remain optional additions.
-5. **Search discovery foundation — complete in source.** Production canonicals, Organization/WebSite structured data, sitemap, robots, `llms.txt`, manifest, temporary browser icon and social artwork are present. Indexing is environment-gated so staging stays blocked and production can be enabled deliberately.
+5. **Search discovery foundation — complete in source.** Production canonicals, Organization/WebSite structured data, sitemap, robots, `llms.txt`, manifest, the approved browser icon and temporary social artwork are present. Indexing is environment-gated so staging stays blocked and production can be enabled deliberately.
 6. **Launch preparation — in progress.** Hostinger Business Web Hosting and email are confirmed. Legal copy, registered office and retention baseline are present. Private staging, responsive review and production-host checks remain.
 
 ## Review gates
@@ -53,6 +53,6 @@ Do not publish invented project metrics, earnings estimates, clients, certificat
 
 ## Current review note
 
-The homepage action reads “I need carbon credits.” All nine routes have received the visual pass. Privacy and Terms now use the confirmed Hostinger, email, legal-entity, registered-office, retention and jurisdiction details. Staging remains non-indexable by default; production indexing requires an explicit build flag. Before public launch, review the staging build, obtain counsel review where appropriate, and replace temporary identity assets when the approved logo system is ready.
+The homepage action reads “I need carbon credits.” All nine routes have received the visual pass. Privacy and Terms now use the confirmed Hostinger, email, legal-entity, registered-office, retention and jurisdiction details. Staging remains non-indexable by default; production indexing requires an explicit build flag. Before public launch, review the staging build, obtain counsel review where appropriate, and replace the temporary social artwork once the approved logo lockups have been exported at the required campaign sizes.
 
 About includes the useful origin story from the earlier Vercel concept, confirmed services and project focus, developing technology, the founding team, company facts and the investor/partner pathway. Unconfirmed pilot claims, additional project types and product-stage claims remain excluded.
